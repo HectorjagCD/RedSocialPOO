@@ -1,5 +1,5 @@
 package es.campusdual.poo;
 
-public class Usuario {
+public class Comments {
 
 }
