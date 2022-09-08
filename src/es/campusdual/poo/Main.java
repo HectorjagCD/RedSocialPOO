@@ -7,6 +7,8 @@ import java.util.List;
 public class Main {
 
 	public static void main(String[] args) {
+		
+// CARGA DE DATOS DE PRUEBA
 		//La lista de los users que forman parte de la red social
 				List<User>usersList = new ArrayList<>();
 				//Users
@@ -41,13 +43,13 @@ public class Main {
 				commentlist.add(commenttextpepemanolita);
 				commentlist.add(commenttextpepediego);
 				//añadimos los comentarios al post de pepe
-				textpepe.setCommentlist(commentlist);
+				textpepe.setCommentList(commentlist);
 				//añadimos la lista de post a pepe
-				pepe.setListpost(postlistpepe);
+				pepe.setPostList(postlistpepe);
 				//añadimos amigos de pepe a pepe
-				pepe.setFollowedlist(followedpepe);
+				pepe.setFollowersList(followedpepe);
 				//añadimos amigos de manolita a manolita
-				manolita.setFollowedlist(followedmanolita);
+				manolita.setFollowersList(followedmanolita);
 				
 				//añadimos los usuarios a la lista de usuarios de la red social
 				usersList.add(diego);
@@ -58,9 +60,12 @@ public class Main {
 				usersList.add(sandra);
 				usersList.add(juan);
 				
+// MENÚ
+			//En el menú se llaman a las funcionalidades descritas en el pdf
 
-				//en el menú se llaman a las funcionalidades descritas en el pdf
-
+				
+				
+				
 			// Esto para mi Main
 			//opción añadir usuario
 			// String nameNewUser= input.string("Nombre de usuario?");

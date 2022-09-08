@@ -34,14 +34,14 @@ public class Post {
 	/**
 	 * @return the commentList
 	 */
-	public List<Comment> getCommentsList() {
+	public List<Comment> getCommentList() {
 		return commentList;
 	}
 
 	/**
 	 * @param commentList the commentList to set
 	 */
-	public void setCommentsList(List<Comment> commentsList) {
+	public void setCommentList(List<Comment> commentsList) {
 		this.commentList = commentsList;
 	}
 	
