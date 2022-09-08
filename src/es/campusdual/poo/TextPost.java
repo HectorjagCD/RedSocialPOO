@@ -8,7 +8,7 @@ public class TextPost extends Post {
 
 	private String content;
 	
-	public TextPost(LocalDate postDate, List<Comment> commentList, String title, String content) {
+	public TextPost(LocalDate postDate, List<Comment> commentList, String content) {
 		super(postDate, commentList);
 		this.content = content;
 	}

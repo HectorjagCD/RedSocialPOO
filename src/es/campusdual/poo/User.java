@@ -61,8 +61,17 @@ public class User {
 	public void setPostList(List<Post> postList) {
 		this.postList = postList;
 	}
-	
-	
+	// 	METODOS 	
+	public void addUser() {
+		
+		// crear objeto con nombre de usuario en el main
+		// pasar la lista de usuarios al add user condicuional
+		
+		// Añadimos un usuario a la red social
+	}
+	public void deleteUser() {
+		// Borramos un usuario de la red social
+	}
 	
 
 }

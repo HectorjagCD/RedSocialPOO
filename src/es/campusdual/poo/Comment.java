@@ -6,9 +6,9 @@ public class Comment {
 
 	private String commentText;
 	private LocalDate commentDate;
-	private String userCommentOwner;
+	private User userCommentOwner;
 
-	public Comment(String commentText, LocalDate commentDate, String userCommentOwner) {
+	public Comment(String commentText, LocalDate commentDate, User userCommentOwner) {
 		super();
 		this.commentText = commentText;
 		this.commentDate = commentDate;
@@ -48,14 +48,14 @@ public class Comment {
 	/**
 	 * @return the userCommentOwner
 	 */
-	public String getUserCommentOwner() {
+	public User getUserCommentOwner() {
 		return userCommentOwner;
 	}
 
 	/**
 	 * @param userCommentOwner the userCommentOwner to set
 	 */
-	public void setUserCommentOwner(String userCommentOwner) {
+	public void setUserCommentOwner(User userCommentOwner) {
 		this.userCommentOwner = userCommentOwner;
 	}
 
