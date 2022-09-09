@@ -19,7 +19,12 @@ public class User {
 		this.postList = postList;
 	}
 
-	// GETTERS SETTERS	
+	@Override
+	public String toString() {
+		return "User [name=" + name + "]";
+	}
+
+	// GETTERS SETTERS
 	/**
 	 * @return the name
 	 */
@@ -61,17 +66,32 @@ public class User {
 	public void setPostList(List<Post> postList) {
 		this.postList = postList;
 	}
-	// 	METODOS 	
-	public void addUser() {
-		
+
+	// METODOS
+	public void addUser(List<User> usersList, User userToAdd) {
+		Boolean noExiste= true;
+		for (User usr : usersList) {
+			if (usr == userToAdd) {
+				System.out.println("El usuario " + userToAdd.getName()
+						+ " ya existe en la red social, por favor elija otro nombre");
+				noExiste=false;
+			}
+		}
+		  if (noExiste){
+			  String newUser = userToAdd.getName();
+			  User a = new User(userToAdd.getName());
+				usersList.add(userToAdd);
+				System.out.println("Usuario " + userToAdd.getName() + " añadido correctamente");
+			}
+
 		// crear objeto con nombre de usuario en el main
 		// pasar la lista de usuarios al add user condicuional
-		
+
 		// Añadimos un usuario a la red social
 	}
+
 	public void deleteUser() {
 		// Borramos un usuario de la red social
 	}
-	
 
 }

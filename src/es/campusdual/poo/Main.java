@@ -4,6 +4,7 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class Main {
 
 	public static void main(String[] args) {
@@ -62,8 +63,17 @@ public class Main {
 				
 // MENÚ
 			//En el menú se llaman a las funcionalidades descritas en el pdf
-
+				String option = "";
+				System.out.println(pepe.getName());
 				
+				diego.addUser(usersList, diego);
+				
+				System.out.println(usersList.toString());
+				
+				
+//				option = Input.string(
+//						"Selección: \n     '+' - Acelerar\n     '-' - Frear\n     'n' - Marcha directa\n     'r' - Marcha atrás\n     'd' - Xirar a dereita\n     'i' - Xirar a esquerda\n     'end' - Acaba o programa\nQué opción desexa facer?: ");
+//				System.out.println();
 				
 				
 			// Esto para mi Main
