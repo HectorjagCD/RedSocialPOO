@@ -5,17 +5,17 @@ import java.util.List;
 public class User {
 
 	public String name;
-	public List<User> followersList;
+	public List<User> followedList;
 	public List<Post> postList;
 
 	public User(String name) {
 		this.name = name;
 	}
 
-	public User(String name, List<User> followersList, List<Post> postList) {
+	public User(String name, List<User> followedList, List<Post> postList) {
 
 		this.name = name;
-		this.followersList = followersList;
+		this.followedList = followedList;
 		this.postList = postList;
 	}
 
@@ -40,17 +40,17 @@ public class User {
 	}
 
 	/**
-	 * @return the followersList
+	 * @return the followedList
 	 */
-	public List<User> getFollowersList() {
-		return followersList;
+	public List<User> getFollowedList() {
+		return followedList;
 	}
 
 	/**
-	 * @param followersList the followersList to set
+	 * @param followedList the followedList to set
 	 */
-	public void setFollowersList(List<User> followersList) {
-		this.followersList = followersList;
+	public void setFollowedList(List<User> followersList) {
+		this.followedList = followersList;
 	}
 
 	/**
@@ -68,21 +68,13 @@ public class User {
 	}
 
 	// METODOS
-	public void addUser(List<User> usersList, User userToAdd) {
-		Boolean noExiste= true;
-		for (User usr : usersList) {
-			if (usr == userToAdd) {
-				System.out.println("El usuario " + userToAdd.getName()
-						+ " ya existe en la red social, por favor elija otro nombre");
-				noExiste=false;
-			}
+	public void addUser(List<User> usersList) {
+		if (!usersList.contains(this)) {
+			usersList.add(this);
+		} else {
+			System.out.println(
+					"El usuario " + this.getName() + " ya existe en la red social, por favor elija otro nombre");
 		}
-		  if (noExiste){
-			  String newUser = userToAdd.getName();
-			  User a = new User(userToAdd.getName());
-				usersList.add(userToAdd);
-				System.out.println("Usuario " + userToAdd.getName() + " añadido correctamente");
-			}
 
 		// crear objeto con nombre de usuario en el main
 		// pasar la lista de usuarios al add user condicuional

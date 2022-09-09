@@ -48,9 +48,9 @@ public class Main {
 				//añadimos la lista de post a pepe
 				pepe.setPostList(postlistpepe);
 				//añadimos amigos de pepe a pepe
-				pepe.setFollowersList(followedpepe);
+				pepe.setFollowedList(followedpepe);
 				//añadimos amigos de manolita a manolita
-				manolita.setFollowersList(followedmanolita);
+				manolita.setFollowedList(followedmanolita);
 				
 				//añadimos los usuarios a la lista de usuarios de la red social
 				usersList.add(diego);
@@ -66,7 +66,11 @@ public class Main {
 				String option = "";
 				System.out.println(pepe.getName());
 				
-				diego.addUser(usersList, diego);
+				// inp
+				
+				User hector = new User("hector");
+				
+				hector.addUser(usersList);
 				
 				System.out.println(usersList.toString());
 				
@@ -78,8 +82,11 @@ public class Main {
 				
 			// Esto para mi Main
 			//opción añadir usuario
+				// leer teclado nombre usuario
+				
+				
 			// String nameNewUser= input.string("Nombre de usuario?");
-			// User userSN= new user(nameNewUser);
+			// User u= new user(nameNewUser);
 			// userSN.addUser(ListaDeUsuarios,)
 			
 	}
