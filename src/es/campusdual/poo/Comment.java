@@ -9,7 +9,6 @@ public class Comment {
 	private User userCommentOwner;
 
 	public Comment(String commentText, LocalDate commentDate, User userCommentOwner) {
-		super();
 		this.commentText = commentText;
 		this.commentDate = commentDate;
 		this.userCommentOwner = userCommentOwner;

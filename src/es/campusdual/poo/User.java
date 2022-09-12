@@ -68,22 +68,35 @@ public class User {
 	}
 
 	// METODOS
+	// Crear objeto con nombre de usuario en el main | Pasar la lista de usuarios al add user condicuional | Añadimos un usuario a la red social
 	public void addUser(List<User> usersList) {
 		if (!usersList.contains(this)) {
 			usersList.add(this);
+			System.out.println("Usuario "+ this.getName() + " añadido.");
 		} else {
 			System.out.println(
 					"El usuario " + this.getName() + " ya existe en la red social, por favor elija otro nombre");
 		}
-
-		// crear objeto con nombre de usuario en el main
-		// pasar la lista de usuarios al add user condicuional
-
-		// Añadimos un usuario a la red social
+	}
+	
+	// Borramos un usuario de la red social
+	public void deleteUser(List<User> usersList) {
+		if (usersList.contains(this)) {
+			usersList.remove(this);
+			System.out.println("Usuario "+ this.getName() + " removido.");
+	}	else {
+		System.out.println(
+				"El usuario " + this.getName() + " no existe en la red social");
 	}
 
-	public void deleteUser() {
-		// Borramos un usuario de la red social
 	}
+	// Creat post createPost
+	
+	public void createPost() {
+		
+		
+	}
+	
 
+	
 }

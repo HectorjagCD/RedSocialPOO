@@ -45,6 +45,18 @@ public class Post {
 		this.commentList = commentsList;
 	}
 	
+	// Create Comment
+	// Creat post createComment
+	
+	public void createComment() {
+		
+		
+	}
+	
+	
+	
+	// Delete Comment
+	
 	
 	
 }

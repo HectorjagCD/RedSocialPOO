@@ -68,16 +68,22 @@ public class Main {
 				
 				// inp
 				
-				User hector = new User("hector");
+				User hector = new User("hector");				
+				
+//				Comparar objetos por atributo name
+//				if (usuario1.getName().equals(usuario2.getName())) {
+//					
+//				};
+//				
+//				if (usuario1==usuario1) {
+//					
+//				};
 				
 				hector.addUser(usersList);
 				
 				System.out.println(usersList.toString());
 				
-				
-//				option = Input.string(
-//						"Selección: \n     '+' - Acelerar\n     '-' - Frear\n     'n' - Marcha directa\n     'r' - Marcha atrás\n     'd' - Xirar a dereita\n     'i' - Xirar a esquerda\n     'end' - Acaba o programa\nQué opción desexa facer?: ");
-//				System.out.println();
+
 				
 				
 			// Esto para mi Main
@@ -85,9 +91,14 @@ public class Main {
 				// leer teclado nombre usuario
 				
 				
-			// String nameNewUser= input.string("Nombre de usuario?");
-			// User u= new user(nameNewUser);
-			// userSN.addUser(ListaDeUsuarios,)
+//			 String nameNewUser= input.string("Nombre de usuario?");
+//			 User u= new user(nameNewUser);
+//			 userSN.addUser(ListaDeUsuarios,)
+
+//				option = Input.string(
+//				"Selección: \n     '+' - Acelerar\n     '-' - Frear\n     'n' - Marcha directa\n     'r' - Marcha atrás\n     'd' - Xirar a dereita\n     'i' - Xirar a esquerda\n     'end' - Acaba o programa\nQué opción desexa facer?: ");
+//		System.out.println();
+			
 			
 	}
 
